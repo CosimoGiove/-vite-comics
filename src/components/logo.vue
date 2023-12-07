@@ -10,6 +10,8 @@ export default{
 <style lang="scss" scoped>
 img{
     height: 77px;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
 
 </style>

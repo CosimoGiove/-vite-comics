@@ -57,7 +57,7 @@ ul{
         cursor: pointer;
         text-transform: uppercase;
         font-size: 13px;
-        line-height: 100px;
+        line-height: 78px;
         
     }
     li:hover{

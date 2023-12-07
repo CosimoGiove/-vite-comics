@@ -39,8 +39,6 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 10px;
-        margin-bottom: 10px;
     }
 
 }
