@@ -4,13 +4,13 @@ import header1 from './components/header1.vue';
 import footer1 from './components/footer1.vue';
 
 
-export default{
-  data(){
-    return{
+export default {
+  data() {
+    return {
 
     }
   },
-  components:{
+  components: {
     header1,
     main1,
     footer1,
@@ -20,10 +20,9 @@ export default{
 </script>
 
 <template>
-  <header1/>
-  <main1/>
-  <footer1/>
-
+  <header1 />
+  <main1 />
+  <footer1 />
 </template>
 
 <style lang="scss" scoped>
