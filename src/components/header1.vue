@@ -33,15 +33,14 @@ export default {
 
 <style lang="scss" scoped>
 header {
-    padding-bottom: 10px;
-
     .contenitore {
         width: 80%;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-top: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
 }

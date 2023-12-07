@@ -57,10 +57,12 @@ ul{
         cursor: pointer;
         text-transform: uppercase;
         font-size: 13px;
+        line-height: 100px;
         
     }
     li:hover{
         color: #238efa;
+        border-bottom: 3px solid #238efa;
     }
 }
 </style>
