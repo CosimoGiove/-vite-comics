@@ -75,6 +75,7 @@ export default{
     color: #959595;
     margin-bottom: 10px;
     font-size: 14px;
+    cursor: pointer;
   }
   h2{
     color: white;
@@ -88,6 +89,9 @@ export default{
     position: absolute;
     top: -60px;
     right: 0px;
+  }
+  li:hover{
+    color: white;
   }
 }
 // .hello{

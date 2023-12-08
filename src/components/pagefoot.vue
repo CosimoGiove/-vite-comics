@@ -19,7 +19,7 @@ export default {
                     <ul>
                         <h2>Follow us</h2>
                         <li v-for="icona in icone">
-                            <img :src="icona" alt="">
+                            <img :src="icona" alt="icone">
                         </li>
                     </ul>
                 </div>
@@ -32,7 +32,6 @@ export default {
 <style lang="scss" scoped>
 .containerpiedipagina {
     position: relative;
-
     .contenutofooter {
         position: absolute;
         width: 100%;
@@ -66,6 +65,7 @@ export default {
     img {
         width: 30px;
         margin-left: 15px;
+        cursor: pointer;
     }
     ul{
         display: flex;
@@ -77,6 +77,11 @@ export default {
         font-size: 16px;
         font-weight: bolder;
         margin-right: 20px;
+    }
+    button:hover{
+        background-color: white;
+        color: black;
+        border: 2px solid black;
     }
 
 }</style>

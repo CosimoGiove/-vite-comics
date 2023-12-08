@@ -1,38 +1,38 @@
 <script>
-export default{
-    name:"navabr",
-    data(){
-        return{
-            lista:[
+export default {
+    name: "navabr",
+    data() {
+        return {
+            lista: [
                 {
-                    selezione:"Characters"
+                    selezione: "Characters"
                 },
                 {
-                    selezione:"Comics"
+                    selezione: "Comics"
                 },
                 {
-                    selezione:"Movies"
+                    selezione: "Movies"
                 },
                 {
-                    selezione:"Tv"
+                    selezione: "Tv"
                 },
                 {
-                    selezione:"Games"
+                    selezione: "Games"
                 },
                 {
-                    selezione:"Collectibles"
+                    selezione: "Collectibles"
                 },
                 {
-                    selezione:"Videos"
+                    selezione: "Videos"
                 },
                 {
-                    selezione:"Fans"
+                    selezione: "Fans"
                 },
                 {
-                    selezione:"News"
+                    selezione: "News"
                 },
                 {
-                    selezione:"Shop"
+                    selezione: "Shop"
                 },
             ]
         }
@@ -41,26 +41,24 @@ export default{
 
 </script>
 <template>
-   <ul>
-    <li v-for="list in lista">
-        {{ list.selezione}}
-
-    </li>
-   </ul>
-
+    <ul>
+        <li v-for="list in lista">
+           <div>{{ list.selezione }}</div>
+        </li>
+    </ul>
 </template>
 <style lang="scss" scoped>
-ul{
-    li{
+ul {
+    li {
         display: inline-block;
         margin-left: 30px;
         cursor: pointer;
         text-transform: uppercase;
         font-size: 13px;
-        line-height: 78px;
+        line-height: 77px;
         
     }
-    li:hover{
+    li:hover {
         color: #238efa;
         border-bottom: 3px solid #238efa;
     }
