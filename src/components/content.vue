@@ -1,6 +1,10 @@
 <script>
+import card from './card.vue';
 export default {
     name: "content",
+    components:{
+      card
+    },
     data() {
         return {
             serie: [
@@ -93,15 +97,13 @@ export default {
         </div>
         <div class="serie">
             <ul>
-                <li v-for="series in serie">
-                    <img :src="series.thumb" alt="">
-                    <div>
-                        {{ series.series }}
-                    </div>
-                   
-                </li>
+                <card v-for="seriess in serie " :immagine="seriess.thumb" :nome="seriess.series"></card>
             </ul>
-
+           
+            <div class="bottone">
+                <button>load more</button>
+            </div>
+           
         </div>
 
     </div>
@@ -126,32 +128,38 @@ export default {
     .seriecorrente {
         position: absolute;
         top: -25px;
-        left: 140px;
+        left: 160px;
         font-size: 20px;
         padding: 10px 25px;
         background-color: #0282f9;
     }
 
-    // ul {
-    //     display: flex;
-    //     flex-wrap: wrap;
-    //     list-style: none;
-    //     margin: 0 auto;
-    // }
-
+   ul{
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0 auto;
+        margin-top: 50px;
+    }
     img{
         width: 100%;
+        height: 300px;
+        
     }
-    li{
-      display: flex;
-      flex-basis: auto;
-      flex-wrap: wrap;
-    }
-
-
-    .serie {
+     .serie{
         width: 80%;
         margin: 0 auto;
+    }
+    
+    .bottone{
+        text-align: center;
+        padding-bottom: 30px;
+        button{
+            padding: 15px 50px;
+            color: white;
+            background-color:#0282f9 ;
+            cursor: pointer;
+        }
     }
 }
 </style>
