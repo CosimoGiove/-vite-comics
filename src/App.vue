@@ -4,6 +4,7 @@ import header1 from './components/header1.vue';
 import footer1 from './components/footer1.vue';
 
 
+
 export default {
   data() {
     return {

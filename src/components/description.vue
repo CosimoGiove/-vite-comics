@@ -23,8 +23,8 @@ export default{
         <div class="contenitorelink">
             <h2>Dc Comics</h2>            
             <ul>
-                <li v-for="links of link">
-                    {{ links}}
+                <li v-for="links in link">
+                   {{ links}}
                 </li>
             </ul>
             <h2>Shop</h2>
@@ -77,6 +77,7 @@ export default{
     font-size: 14px;
     cursor: pointer;
   }
+
   h2{
     color: white;
     margin-bottom: 20px;
@@ -94,14 +95,5 @@ export default{
     color: white;
   }
 }
-// .hello{
-//    position: relative;
-//    .hello2{
-//     position: absolute;
-//     background-color: black;
-//     height: 200px;
-//     width: 100%;
-//    }
-//   }
 
 </style>
